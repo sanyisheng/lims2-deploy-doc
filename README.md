@@ -322,7 +322,7 @@ docker run \
 docker run \
 	--name=node-lims2 \
 	-d \
-	-v /home/genee/node-lims2/config:/usr/src/app/ \
+	-v /home/genee/node-lims2/config:/usr/src/app/config/ \
 	-v /home/genee/node-lims2/logs:/var/log/node-lims2 \
 	-v /tmp/lims2-msg:/tmp/lims2-msg \
 	-p 172.17.42.1:8041:8041 \
