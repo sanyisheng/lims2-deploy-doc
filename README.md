@@ -6,8 +6,8 @@
 
 | 服务列表 | 版本 | 项目地址 | dockerfile 地址 |
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- |
-| docker.genee.in/genee/reserv-server | v0.2.1-d2015082101 | https://github.com/17kong/lims2-reserv-server | 
-| docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | 
+| docker.genee.in/genee/reserv-server | v0.2.1-d2015082101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
+| docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.2.2-d2015082001 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
 | docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-tools/docker-convention) 限定** | https://github.com/iamfat/dockerfile-debade-trigger | https://github.com/iamfat/debade-trigger |
 | docker.genee.in/genee/haikan-nvs | v1.2.1-d2015081901 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
