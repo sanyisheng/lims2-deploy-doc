@@ -99,7 +99,7 @@ node-lims2 的部署, 命令如下:
 * mariadb 的服务初次部署需要按照如下方法部署
 	* 1. 挂载临时目录 `/tmp/mysql` 到 `/target` 下
 	* 2. `docker run --rm -it -v /tmp/mysql:/target docker.genee.in/genee/mariadb:xxxx /bin/bash` 进入到容器中
-	* 3. `mysql_db_install` 初始化数据库数据
+	* 3. `mysql_install_db` 初始化数据库数据
 	* 4. `tar -zcvf /target/mysql.tar.gz /var/lib/mysql` 打包基础 mysql 数据库
 	* 5. 宿主机上进行 mysql.tar.gz 解压到 /var/lib/
 	* 6. 重新部署即可
