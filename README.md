@@ -7,7 +7,7 @@
 | 服务列表 | 版本 |
 | --------------------------------------- | ---------------------------: |
 | docker.genee.in/genee/reserv-server | v0.2.1-d2015082101 |
-| docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701ba |
+| docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 |
 | docker.genee.in/genee/debade-courier | v0.2.2-d2015082001 |
 | docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-tools/docker-convention) 限定** |
 | docker.genee.in/genee/haikan-nvs | v1.2.1-d2015081901 |
