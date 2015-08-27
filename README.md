@@ -70,19 +70,16 @@
 
 debade-trigger 的部署, 命令如下:
 
-	```
 	docker run -d \
 	--name=debade-trigger \
 	--restart=always \
 	-v /home/genee/debade-trigger/config:/etc/debade/ \
-	docker.genee.in/genee/debade-trigger:v0.1.7-d20150820101 
-	```
+	docker.genee.in/genee/debade-trigger:v0.1.7-d20150820101
 
 挂载了 config 配置目录进入
 
 node-lims2 的部署, 命令如下:
 
-	```
 	docker run -d \
 	--name=node-lims2 \
 	--restart=always \
@@ -90,7 +87,6 @@ node-lims2 的部署, 命令如下:
 	-v /home/genee/node-lims2/logs:/var/log/node-lims2 \
 	-v /tmp/lims2-msg:/tmp/lims2-msg \
 	docker.genee.in/genee/node-lims2:v1.0.2-d2015081701
-	```
 	
 ### 注意事项
 
@@ -337,6 +333,10 @@ docker run \
 	--name=mariadb \
 	-d \
 	-v /var/lib/mysql:/var/lib/mysql \
+	-v /var/log/mysql:/var/log/mysql \
+	-v /home/genee/mariadb/my.cnf:/etc/mysql/my.cnf \
+	-v /home/genee/maraidb/conf.d:/etc/mysql/conf.d \
+	-v /dev/log:/dev/log \
 	-p 172.17.42.1:3306:3306 \
 	--restart=always \
 	docker.genee.in/genee/mariadb:v10.0.21-d2015081001
