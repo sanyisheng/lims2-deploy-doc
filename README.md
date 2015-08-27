@@ -10,8 +10,8 @@
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.2.2-d2015082001 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
 | docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-tools/docker-convention) 限定** | https://github.com/iamfat/dockerfile-debade-trigger | https://github.com/iamfat/debade-trigger |
-| docker.genee.in/genee/haikan-nvs | v1.2.1-d2015081901 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
-| docker.genee.in/genee/tiandy-nvs | v1.2.1-d2015081901 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
+| docker.genee.in/genee/haikan-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
+| docker.genee.in/genee/tiandy-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
 | docker.genee.in/genee/lims2-guard | v1.0.0-d2015081701 | https://bitbucket.org/genee/lims2-guard | https://bitbucket.org/genee/lims2-guard | 
 | docker.genee.in/genee/crtmp-server | v0.716-d2015081701 | https://bitbucket.org/genee/dockerfile-crtmp | https://bitbucket.org/genee/dockerfile-crtmp | 
 | docker.genee.in/genee/node-lims2 | v1.0.2-d2015081701 | https://bitbucket.org/genee/node-lims2 | https://bitbucket.org/genee/node-lims2 |
