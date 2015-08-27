@@ -1,0 +1,13 @@
+# This cnf is installed by lims2-backup
+[mysqld]
+# binlog 日志名
+log_bin=mysql-bin
+# binlog 日志格式
+binlog_format=MIXED
+# binlog 过期清理时间
+# You can read the document here:
+#  https://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html#sysvar_expire_logs_days
+#  https://dev.mysql.com/doc/refman/5.5/en/mysqld-option-tables.html
+expire_logs_days=3
+# 每个binlog日志文件的大小
+max_binlog_size=100M
