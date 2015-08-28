@@ -4,7 +4,7 @@
 
 ## 服务列表和版本
 
-| 服务列表 | 版本 | 项目地址 | dockerfile 地址 |
+| 服务列表 | 版本 | dockerfile 地址 | 项目地址 |
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- |
 | docker.genee.in/genee/reserv-server | v0.2.1-d2015082101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
