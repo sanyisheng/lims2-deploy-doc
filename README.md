@@ -380,8 +380,8 @@ docker run \
 	-d \
 	-v /backups/remote:/backup/backups/remote \
 	-p 1738:1738 \
-   --restart=always \
-   docker.genee.in/genee/lims2-backup-server:v0.1.1-d2015082701
+   	--restart=always \
+   	docker.genee.in/genee/lims2-backup-server:v0.1.1-d2015082701
 ```
 
 #### haikan-nvs
@@ -390,8 +390,14 @@ TODO
 
 #### tiandy-nvs
 
-TODO
-
+```
+docker run \
+	--name=tiandy-nvs \
+	-d \
+	-v /home/genee/tiandy-nvs/config/tiandy_nvs.conf:/etc/tiandy_nvs.conf
+	--restart=always \
+	docker.genee.in/genee/tiandy-nvs:v1.2.1-d2015082701
+```
 #### crtmp-server
 
 TODO
