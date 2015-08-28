@@ -400,4 +400,12 @@ docker run \
 ```
 #### crtmp-server
 
-TODO
+```
+docker run \
+	--name=crtmp-server \
+	-d \
+	-p 1935:1935 \
+	-v /home/genee/crtmp-server/config/:/etc/lims2/crtmp-server/ \
+	--restart=always \
+	docker.genee.in/genee/crtmp-server:v0.716-d2015081701
+```
