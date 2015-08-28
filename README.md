@@ -394,7 +394,7 @@ TODO
 docker run \
 	--name=tiandy-nvs \
 	-d \
-	-v /home/genee/tiandy-nvs/config/tiandy_nvs.conf:/etc/tiandy_nvs.conf
+	-v /home/genee/tiandy-nvs/config/tiandy_nvs.conf:/etc/tiandy_nvs.conf \
 	--restart=always \
 	docker.genee.in/genee/tiandy-nvs:v1.2.1-d2015082701
 ```
