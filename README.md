@@ -336,7 +336,8 @@ docker run \
 	-v /var/lib/mysql:/var/lib/mysql \
 	-v /var/log/mysql:/var/log/mysql \
 	-v /home/genee/mariadb/my.cnf:/etc/mysql/my.cnf \
-	-v /home/genee/maraidb/conf.d:/etc/mysql/conf.d \
+	-v /home/genee/maraidb/conf.d/binlog.cnf:/etc/mysql/conf.d/binlog.cnf \
+	-v /home/genee/mariadb/conf.d/mysqld_safe_syslog.cnf:/etc/mysql/conf.d/mysqld_safe_syslog.cnf \
 	-v /dev/log:/dev/log \
 	-p 172.17.42.1:3306:3306 \
 	--restart=always \
@@ -386,7 +387,14 @@ docker run \
 
 #### haikan-nvs
 
-TODO 
+```
+docker run \
+	--name=haikan-nvs \
+	-d \
+	-v /home/genee/haikan-nvs/config/haikan_nvs.conf:/etc/haikan_nvs.conf \
+	--restart=always \
+	docker.genee.in/genee/haikan-nvs:v1.2.1-d2015082701
+```
 
 #### tiandy-nvs
 
