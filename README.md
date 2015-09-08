@@ -336,7 +336,7 @@ docker run \
 	-v /var/lib/mysql:/var/lib/mysql \
 	-v /var/log/mysql:/var/log/mysql \
 	-v /home/genee/mariadb/my.cnf:/etc/mysql/my.cnf \
-	-v /home/genee/maraidb/conf.d/binlog.cnf:/etc/mysql/conf.d/binlog.cnf \
+	-v /home/genee/mariadb/conf.d/binlog.cnf:/etc/mysql/conf.d/binlog.cnf \
 	-v /home/genee/mariadb/conf.d/mysqld_safe_syslog.cnf:/etc/mysql/conf.d/mysqld_safe_syslog.cnf \
 	-v /dev/log:/dev/log \
 	-p 172.17.42.1:3306:3306 \
