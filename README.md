@@ -86,6 +86,7 @@ node-lims2 的部署, 命令如下:
 	-v /home/genee/node-lims2/config:/usr/src/app/config \
 	-v /home/genee/node-lims2/logs:/var/log/node-lims2 \
 	-v /tmp/lims2-msg:/tmp/lims2-msg \
+	-p 172.17.42.1:8041:8041 \
 	docker.genee.in/genee/node-lims2:v1.0.2-d2015081701
 	
 ### 注意事项
