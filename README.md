@@ -398,6 +398,9 @@ docker run \
 	docker.genee.in/genee/haikan-nvs:v1.2.1-d2015082701
 ```
 
+**注意, --log-driver 需要在 1.6 (及)以上的 docker 中使用, 1.6 以下请不要使用 --log-driver**
+
+
 #### tiandy-nvs
 
 ```
@@ -409,6 +412,11 @@ docker run \
 	--log-driver=none \
 	docker.genee.in/genee/tiandy-nvs:v1.2.1-d2015082701
 ```
+
+**注意, --log-driver 需要在 1.6 (及)以上的 docker 中使用, 1.6 以下请不要使用 --log-driver**
+
+**注意, 目前所有需要 tiandy-nvs 和 haikan-nvs 的站点 docker daemon 均在 1.6 版本以上**
+
 #### crtmp-server
 
 ```
