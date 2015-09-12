@@ -167,7 +167,7 @@ docker run \
 	--restart=always \
 	docker.genee.in/genee/tszz-server:v0.1.2-d2015081401
 ```
-
+tia
 #### glogon-server
 
 ```
@@ -394,6 +394,7 @@ docker run \
 	-d \
 	-v /home/genee/haikan-nvs/config/haikan_nvs.conf:/etc/haikan_nvs.conf \
 	--restart=always \
+	--log-driver=none
 	docker.genee.in/genee/haikan-nvs:v1.2.1-d2015082701
 ```
 
@@ -405,6 +406,7 @@ docker run \
 	-d \
 	-v /home/genee/tiandy-nvs/config/tiandy_nvs.conf:/etc/tiandy_nvs.conf \
 	--restart=always \
+	--log-driver=none \
 	docker.genee.in/genee/tiandy-nvs:v1.2.1-d2015082701
 ```
 #### crtmp-server
