@@ -97,8 +97,8 @@ node-lims2 的部署, 命令如下:
 	* 1. 挂载临时目录 `/tmp/mysql` 到 `/target` 下
 	* 2. `docker run --rm -it -v /tmp/mysql:/target docker.genee.in/genee/mariadb:xxxx /bin/bash` 进入到容器中
 	* 3. `mysql_install_db` 初始化数据库数据
-	* 4. `tar -zcvf /target/mysql.tar.gz /var/lib/mysql` 打包基础 mysql 数据库
-	* 5. 宿主机上进行 mysql.tar.gz 解压到 /var/lib/
+	* 4. `cp -r /var/lib/mysql /target` 复制 mysql 数据库至宿主机
+	* 5. 宿主机上将 /target/mysql 目录放置到指定目录
 	* 6. 重新部署即可
 
 * 所有非公网暴露的端口, 如需内部使用, 需绑定到 **docker0** 网卡
