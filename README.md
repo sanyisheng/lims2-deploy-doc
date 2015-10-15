@@ -366,13 +366,14 @@ docker run \
 	-d \
 	-v /home/genee/icco-server/config:/usr/src/app/config \
 	-v /home/genee/icco-server/logs:/usr/src/app/logs \
-	-v /tmp/genee-node-ipc:/tmp/genee-node-ipc \
+	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
 	-p 2333:2333 \
 	-p 2332:2332 \
 	-p 2730:2730 \
 	--restart=always \
-	docker.genee.in/genee/icco-server:v0.3.9-d2015081401
+	docker.genee.in/genee/icco-server:v0.3.9-d3015081401
 ```
+**注意 此处tag是失误造成 请按照[docker-convention](https://github.com/genee-tools/docker-convention) 限定**
 
 #### lims2-backup-server
 
