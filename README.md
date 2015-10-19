@@ -9,7 +9,7 @@
 | docker.genee.in/genee/reserv-server | v0.2.1-d2015082101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.2.2-d2015082001 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
-| docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-tools/docker-convention) 限定** | https://github.com/iamfat/dockerfile-debade-trigger | https://github.com/iamfat/debade-trigger |
+| docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-projects/docker-convention) 限定** | https://github.com/iamfat/dockerfile-debade-trigger | https://github.com/iamfat/debade-trigger |
 | docker.genee.in/genee/haikan-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
 | docker.genee.in/genee/tiandy-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
 | docker.genee.in/genee/lims2-guard | v1.0.0-d2015081701 | https://bitbucket.org/genee/lims2-guard | https://bitbucket.org/genee/lims2-guard | 
@@ -27,7 +27,7 @@
 | docker.genee.in/genee/genee-updater-server | v0.2.12-d2015081401 | https://bitbucket.org/genee/genee-updater-server | https://bitbucket.org/genee/genee-updater-server | 
 | docker.genee.in/genee/mariadb | v10.0.21-d2015081001 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | 
 | docker.genee.in/genee/redis | v2.8.17-d2015080301 | https://github.com/iamfat/dockerfile-redis | https://github.com/iamfat/dockerfile-redis | 
-| docker.genee.in/genee/beanstalkd | v1.10.0-d2015080301 | https://github.com/genee-tools/dockerfile-beanstalkd | https://github.com/genee-tools/dockerfile-beanstalkd |
+| docker.genee.in/genee/beanstalkd | v1.10.0-d2015080301 | https://github.com/genee-projects/dockerfile-beanstalkd | https://github.com/genee-projects/dockerfile-beanstalkd |
 | docker.genee.in/genee/sphinxsearch | v2.2.9-d2015080301 | https://github.com/iamfat/dockerfile-sphinxsearch | https://github.com/iamfat/dockerfile-sphinxsearch | 
 
 ## 服务说明
@@ -167,7 +167,7 @@ docker run \
 	--restart=always \
 	docker.genee.in/genee/tszz-server:v0.1.2-d2015081401
 ```
-tia
+
 #### glogon-server
 
 ```
@@ -373,7 +373,7 @@ docker run \
 	--restart=always \
 	docker.genee.in/genee/icco-server:v0.3.9-d3015081401
 ```
-**注意 此处tag是失误造成 请按照[docker-convention](https://github.com/genee-tools/docker-convention) 限定**
+**注意 此处tag是失误造成 请按照[docker-convention](https://github.com/genee-projects/docker-convention) 限定**
 
 #### lims2-backup-server
 
