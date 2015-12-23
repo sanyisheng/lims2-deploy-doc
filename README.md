@@ -8,7 +8,7 @@
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- |
 | docker.genee.in/genee/reserv-server | v0.2.1-d2015082101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
-| docker.genee.in/genee/debade-courier | v0.2.2-d2015082001 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
+| docker.genee.in/genee/debade-courier | v0.3.0-d2015122301 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
 | docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-projects/docker-convention) 限定** | https://github.com/iamfat/dockerfile-debade-trigger | https://github.com/iamfat/debade-trigger |
 | docker.genee.in/genee/haikan-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
 | docker.genee.in/genee/tiandy-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | 
@@ -300,7 +300,7 @@ docker run \
 	-v /home/genee/debade-courier/config:/etc/debade \
 	--restart=always \
 	-p 172.17.42.1:3333:3333 \
-	docker.genee.in/genee/debade-courier:v0.2.2-d2015082001
+	docker.genee.in/genee/debade-courier:v0.3.0-d2015122301
 ```
 
 #### lims2-guard
