@@ -25,7 +25,7 @@
 | docker.genee.in/genee/tszz-server | v0.1.2-d2015081401 | https://bitbucket.org/genee/tszz-server | https://bitbucket.org/genee/tszz-server |
 | docker.genee.in/genee/epc-server | v0.3.4-d2015081401 | https://bitbucket.org/genee/epc-server | https://bitbucket.org/genee/epc-server |
 | docker.genee.in/genee/genee-updater-server | v0.2.12-d2015081401 | https://bitbucket.org/genee/genee-updater-server | https://bitbucket.org/genee/genee-updater-server | 
-| docker.genee.in/genee/mariadb | v10.0.21-d2015081001 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | 
+| docker.genee.in/genee/mariadb | v10.1.10-d2015122701 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | 
 | docker.genee.in/genee/redis | v2.8.17-d2015080301 | https://github.com/iamfat/dockerfile-redis | https://github.com/iamfat/dockerfile-redis | 
 | docker.genee.in/genee/beanstalkd | v1.10.0-d2015080301 | https://github.com/genee-projects/dockerfile-beanstalkd | https://github.com/genee-projects/dockerfile-beanstalkd |
 | docker.genee.in/genee/sphinxsearch | v2.2.9-d2015080301 | https://github.com/iamfat/dockerfile-sphinxsearch | https://github.com/iamfat/dockerfile-sphinxsearch | 
@@ -98,7 +98,7 @@ node-lims2 的部署, 命令如下:
 	* 2. `docker run --rm -it -v /tmp/mysql:/target docker.genee.in/genee/mariadb:xxxx /bin/bash` 进入到容器中
 	* 3. `mysql_install_db` 初始化数据库数据
 	* 4. `cp -r /var/lib/mysql /target` 复制 mysql 数据库至宿主机
-	* 5. 宿主机上将 /target/mysql 目录放置到指定目录
+	* 5. 宿主机上将 /target/mysql 目录放置到指定目录 (通常为 `/var/lib/mysql`)
 	* 6. 重新部署即可
 
 * 所有非公网暴露的端口, 如需内部使用, 需绑定到 **docker0** 网卡
@@ -342,7 +342,7 @@ docker run \
 	-v /dev/log:/dev/log \
 	-p 172.17.42.1:3306:3306 \
 	--restart=always \
-	docker.genee.in/genee/mariadb:v10.0.21-d2015081001
+	docker.genee.in/genee/mariadb:v10.1.10-d2015122701
 ```
 
 #### reserv-server
