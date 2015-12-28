@@ -8,6 +8,6 @@ binlog_format=MIXED
 # You can read the document here:
 #  https://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html#sysvar_expire_logs_days
 #  https://dev.mysql.com/doc/refman/5.5/en/mysqld-option-tables.html
-expire_logs_days=3
+expire_logs_days=1
 # 每个binlog日志文件的大小
 max_binlog_size=100M
