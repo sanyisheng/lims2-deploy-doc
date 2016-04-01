@@ -18,12 +18,12 @@
 | docker.genee.in/genee/icco-server | v0.3.10-d2015111101 | https://bitbucket.org/genee/icco-server | https://bitbucket.org/genee/icco-server | 
 | docker.genee.in/genee/cacs-server | v0.2.1-d2015081401 | https://bitbucket.org/genee/cacs-server | https://bitbucket.org/genee/cacs-server |
 | docker.genee.in/genee/gdoor-server | v0.1.8-d2015081401 | https://bitbucket.org/genee/gdoor-server | https://bitbucket.org/genee/gdoor-server |
-| docker.genee.in/genee/glogon-server |  v0.4.4-d2015081401 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | 
+| docker.genee.in/genee/glogon-server | v0.5.0-d2016033001 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | 
 | docker.genee.in/genee/env-server | v0.1.4-d2015081401 | https://bitbucket.org/genee/env-server | https://bitbucket.org/genee/env-server |
 | docker.genee.in/genee/vidmon-server | v0.3.2-d2015081401 | https://bitbucket.org/genee/vidmon-server | https://bitbucket.org/genee/vidmon-server |
 | docker.genee.in/genee/dc-cacs-server | v0.1.8-d2015081401 | https://bitbucket.org/genee/dc-cacs-server | https://bitbucket.org/genee/dc-cacs-server |
 | docker.genee.in/genee/tszz-server | v0.1.2-d2015081401 | https://bitbucket.org/genee/tszz-server | https://bitbucket.org/genee/tszz-server |
-| docker.genee.in/genee/epc-server | v0.3.4-d2015081401 | https://bitbucket.org/genee/epc-server | https://bitbucket.org/genee/epc-server |
+| docker.genee.in/genee/epc-server | v0.4.0-d2016033001 | https://bitbucket.org/genee/epc-server | https://bitbucket.org/genee/epc-server |
 | docker.genee.in/genee/genee-updater-server | v0.2.12-d2015081401 | https://bitbucket.org/genee/genee-updater-server | https://bitbucket.org/genee/genee-updater-server | 
 | docker.genee.in/genee/mariadb | v10.1.10-d2015122701 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | 
 | docker.genee.in/genee/redis | v2.8.17-d2015080301 | https://github.com/iamfat/dockerfile-redis | https://github.com/iamfat/dockerfile-redis | 
@@ -179,7 +179,7 @@ docker run \
 	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
 	-p 2430:2430 \
 	--restart=always \
-	docker.genee.in/genee/glogon-server:v0.4.4-d2015081401
+	docker.genee.in/genee/glogon-server:v0.5.0-d2016033001
 ```
 
 #### genee-updater-server:
@@ -221,7 +221,7 @@ docker run \
 	-v /home/genee/epc-server/logs:/usr/src/app/logs \
 	-p 3041:3041 \
 	--restart=always \
-	docker.genee.in/genee/epc-server:v0.3.4-d2015081401
+	docker.genee.in/genee/epc-server:v0.4.0-d2016033001
 ```
 
 #### env-server
