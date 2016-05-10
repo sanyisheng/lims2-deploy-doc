@@ -6,6 +6,7 @@
 
 | 服务列表 | 版本 | dockerfile 地址 | 项目地址 |
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- |
+| docker.genee.in/genee/lims2-env |  v0.1.0-d2016051001 | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder |
 | docker.genee.in/genee/reserv-server | v0.2.1-d2016022501 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.3.0-d2015122301 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
@@ -108,6 +109,32 @@ node-lims2 的部署, 命令如下:
 
 ### 服务部署
 
+#### lims2-env
+
+```
+docker run \
+    --name=lims2-env \
+    -d \
+    -h 8dbcae48549f \
+    -v /dev/log:/dev/log \
+    -v /etc/sphinxsearch/conf.d:/etc/sphinxsearch/conf.d \
+    -v /opt/lims2/volumes:/volumes \
+    -v /etc/lims2:/etc/lims2 \
+    -v /opt/lims2/volumes/var/log/nginx:/var/log/nginx \
+    -v /etc/msmtprc:/etc/msmtprc \
+    -v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+    -v /var/lib/php5:/var/lib/php5 \
+    -v /var/lib/lims2:/var/lib/lims2 \
+    -v /home/disk:/home/disk \
+    -v /var/lib/lims2_vidcam:/var/lib/lims2_vidcam \
+    -v /opt/lims2/data/etc/php5:/etc/php5 \
+    -v /opt/lims2/data/etc/nginx:/etc/nginx \
+    -v /opt/lims2/data/var/www:/var/www \
+    -p 3007:80/tcp \
+    --restart=always \
+    --privileged \
+    docker.genee.in/genee/lims2-env:v0.1.0-d2016051001
+```
 
 #### redis
 
