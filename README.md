@@ -141,7 +141,7 @@ docker run \
 docker run \
     --name eq-stat \
     -d \
-    -p 3007:80/tcp \
+    -p 3008:9000/tcp \
     -v /data/gini-modules:/data/gini-modules:rw \
     --restart=always \
     genee/gini:latest \
