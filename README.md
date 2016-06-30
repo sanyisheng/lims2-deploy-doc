@@ -135,6 +135,19 @@ docker run \
     docker.genee.in/genee/lims2-env:v0.1.0-d2016051101
 ```
 
+#### eq-stat
+
+```
+docker run \
+    --name eq-stat \
+    -d \
+    -p 3007:80/tcp \
+    -v /data/gini-modules:/data/gini-modules:rw \
+    --restart=always \
+    genee/gini:latest \
+    /start
+```
+
 #### redis
 
 ```
