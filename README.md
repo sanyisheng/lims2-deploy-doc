@@ -7,7 +7,7 @@
 | 服务列表 | 版本 | dockerfile 地址 | 项目地址 |
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- |
 | docker.genee.in/genee/lims2-env |  v0.1.0-d2016051101 | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder |
-| docker.genee.in/genee/cron-server | v0.0.1-d2016080202 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server |
+| docker.genee.in/genee/cron-server | v0.1.0-d2016080203 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server |
 | docker.genee.in/genee/reserv-server | v0.3.0-d2016051001 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.3.0-d2015122301 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
@@ -184,7 +184,7 @@ docker run \
     -v /home/genee/cron-server/config:/usr/src/app/config \
     -v /home/genee/cron-server/logs:/usr/src/app/logs \
     --restart=always \
-    docker.genee.in/genee/cron-server:v0.0.1-d2016080202
+    docker.genee.in/genee/cron-server:v0.1.0-d2016080203
 ```
 
 #### vidmon-server
