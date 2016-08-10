@@ -17,15 +17,15 @@
 | docker.genee.in/genee/lims2-guard | v1.0.0-d2015081701 | https://bitbucket.org/genee/lims2-guard | https://bitbucket.org/genee/lims2-guard | 
 | docker.genee.in/genee/crtmp-server | v0.716-d2015081701 | https://bitbucket.org/genee/dockerfile-crtmp | https://bitbucket.org/genee/dockerfile-crtmp | 
 | docker.genee.in/genee/node-lims2 | v1.0.2-d2015081701 | https://bitbucket.org/genee/node-lims2 | https://bitbucket.org/genee/node-lims2 |
-| docker.genee.in/genee/icco-server | v0.3.10-d2015111101 | https://bitbucket.org/genee/icco-server | https://bitbucket.org/genee/icco-server | 
+| docker.genee.in/genee/icco-server | v0.3.11-d2016081001 | https://bitbucket.org/genee/icco-server | https://bitbucket.org/genee/icco-server | 
 | docker.genee.in/genee/cacs-server | v0.2.1-d2015081401 | https://bitbucket.org/genee/cacs-server | https://bitbucket.org/genee/cacs-server |
-| docker.genee.in/genee/gdoor-server | v0.1.8-d2015081401 | https://bitbucket.org/genee/gdoor-server | https://bitbucket.org/genee/gdoor-server |
-| docker.genee.in/genee/glogon-server | v0.5.0-d2016033001 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | 
+| docker.genee.in/genee/gdoor-server | v0.1.9-d2016081002 | https://bitbucket.org/genee/gdoor-server | https://bitbucket.org/genee/gdoor-server |
+| docker.genee.in/genee/glogon-server | v0.5.1-d2016081001 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | 
 | docker.genee.in/genee/env-server | v0.1.4-d2015081401 | https://bitbucket.org/genee/env-server | https://bitbucket.org/genee/env-server |
 | docker.genee.in/genee/vidmon-server | v0.3.2-d2015081401 | https://bitbucket.org/genee/vidmon-server | https://bitbucket.org/genee/vidmon-server |
-| docker.genee.in/genee/dc-cacs-server | v0.1.8-d2015081401 | https://bitbucket.org/genee/dc-cacs-server | https://bitbucket.org/genee/dc-cacs-server |
+| docker.genee.in/genee/dc-cacs-server | v0.1.9-d2016081001 | https://bitbucket.org/genee/dc-cacs-server | https://bitbucket.org/genee/dc-cacs-server |
 | docker.genee.in/genee/tszz-server | v0.1.2-d2015081401 | https://bitbucket.org/genee/tszz-server | https://bitbucket.org/genee/tszz-server |
-| docker.genee.in/genee/epc-server | v0.4.0-d2016033001 | https://bitbucket.org/genee/epc-server | https://bitbucket.org/genee/epc-server |
+| docker.genee.in/genee/epc-server | v0.4.1-d2016081001 | https://bitbucket.org/genee/epc-server | https://bitbucket.org/genee/epc-server |
 | docker.genee.in/genee/genee-updater-server | v0.2.12-d2015081401 | https://bitbucket.org/genee/genee-updater-server | https://bitbucket.org/genee/genee-updater-server | 
 | docker.genee.in/genee/mariadb | v10.1.10-d2015122701 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | 
 | docker.genee.in/genee/redis | v2.8.17-d2015080301 | https://github.com/iamfat/dockerfile-redis | https://github.com/iamfat/dockerfile-redis | 
@@ -52,7 +52,7 @@
 	genee@less:~/genee-updater-server$ tree .
 	.
 	├── config
-	│   └── default.js
+	│   └── default.js
 	├── files
 	└── logs
     	└── genee-updater-server.log
@@ -227,10 +227,10 @@ docker run \
 	--name=glogon-server \
 	-v /home/genee/glogon-server/config:/usr/src/app/config \
 	-v /home/genee/glogon-server/logs:/usr/src/app/logs \
-	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+	-v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
 	-p 2430:2430 \
 	--restart=always \
-	docker.genee.in/genee/glogon-server:v0.5.0-d2016033001
+	docker.genee.in/genee/glogon-server:v0.5.1-d2016081001
 ```
 
 #### genee-updater-server:
@@ -255,10 +255,10 @@ docker run \
 	--name=gdoor-server \
 	-v /home/genee/gdoor-server/config:/usr/src/app/config \
 	-v /home/genee/gdoor-server/logs:/usr/src/app/logs \
-	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+	-v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
 	-p 2930:2930 \
 	--restart=always \
-	docker.genee.in/genee/gdoor-server:v0.1.8-d2015081401
+	docker.genee.in/genee/gdoor-server:v0.1.9-d2016081002
 ```
 
 #### epc-server:
@@ -267,12 +267,12 @@ docker run \
 docker run \
 	-d \
 	--name=epc-server \
-	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+	-v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
 	-v /home/genee/epc-server/config:/usr/src/app/config \
 	-v /home/genee/epc-server/logs:/usr/src/app/logs \
 	-p 3041:3041 \
 	--restart=always \
-	docker.genee.in/genee/epc-server:v0.4.0-d2016033001
+	docker.genee.in/genee/epc-server:v0.4.1-d2016081001
 ```
 
 #### env-server
@@ -295,11 +295,11 @@ docker run \
 	--name=dc-cacs-server \
 	-v /home/genee/dc-cacs-server/config:/usr/src/app/config \
 	-v /home/genee/dc-cacs-server/logs:/usr/src/app/logs \
-	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+	-v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
 	-p 2730:2730 \
 	-p 2830:2830 \
 	--restart=always \
-	docker.genee.in/genee/dc-cacs-server:v0.1.8-d2015081401
+	docker.genee.in/genee/dc-cacs-server:v0.1.9-d2016081001
 ```
 
 #### cacs-server
@@ -310,7 +310,7 @@ docker run \
 	--name=cacs-server \
 	-v /home/genee/cacs-server/config:/usr/src/app/config \
 	-v /home/genee/cacs-server/logs:/usr/src/app/logs \
-	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+	-v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
 	-p 2530:2530 \
 	--restart=always \
 	docker.genee.in/genee/cacs-server:v0.2.1-d2015081401 
@@ -417,12 +417,12 @@ docker run \
 	-d \
 	-v /home/genee/icco-server/config:/usr/src/app/config \
 	-v /home/genee/icco-server/logs:/usr/src/app/logs \
-	-v /tmp/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+	-v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
 	-p 2333:2333 \
 	-p 2332:2332 \
 	-p 2730:2730 \
 	--restart=always \
-	docker.genee.in/genee/icco-server:v0.3.10-d2015111101
+	docker.genee.in/genee/icco-server:v0.3.11-d2016081001
 ```
 **注意 此处tag是失误造成 请按照[docker-convention](https://github.com/genee-projects/docker-convention) 限定**
 
