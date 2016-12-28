@@ -155,7 +155,6 @@ docker run \
 docker run \
 	--name nginx \
 	-d \
-	-v /home/genee/nginx/conf.d:/etc/nginx/conf.d \
 	-v /home/genee/nginx/nginx.conf:/etc/nginx/nginx.conf \
     -v /home/genee/nginx/fastcgi_params:/etc/nginx/fastcgi_params \
 	-v /home/genee/nginx/sites-enabled:/etc/nginx/sites-enabled \
