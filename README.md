@@ -112,6 +112,28 @@ node-lims2 的部署, 命令如下:
 
 #### lims2-env
 
+> php7
+
+```
+docker run \
+    --name=lims2-env \
+    -d \
+    -v /opt/lims2/volumes:/volumes \
+    -v /etc/sphinxsearch/conf.d:/etc/sphinxsearch/conf.d \
+    -v /etc/lims2:/etc/lims2 \
+    -v /etc/msmtprc:/etc/msmtprc \
+    -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
+    -v /var/lib/lims2:/var/lib/lims2 \
+    -v /var/lib/lims2_vidcam:/var/lib/lims2_vidcam \
+    -v /home/disk:/home/disk \
+    -v /opt/lims2/data/etc/php5:/etc/php5 \
+    -v /opt/lims2/data/etc/nginx:/etc/nginx \
+    -p 3007:9000/tcp \
+    --restart=always \
+    --privileged \
+    docker.genee.in/genee/lims2-env:v1.0.0-d2017010501
+```
+
 ```
 docker run \
     --name=lims2-env \
