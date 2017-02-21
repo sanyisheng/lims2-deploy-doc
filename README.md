@@ -6,8 +6,8 @@
 
 | 服务列表 | 版本 | dockerfile 地址 | 项目地址 |
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- |
-| docker.genee.in/genee/lims2-env |  v0.1.0-d2016051101 | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder |
-| docker.genee.in/genee/lims2-env |  v1.0.0-d2017022101 | https://github.com/HuangStomach/lims2-necessity	| https://github.com/HuangStomach/lims2-necessity |
+| docker.genee.in/genee/lims2-env | v0.1.0-d2016051101 | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder |
+| docker.genee.in/genee/lims2 | v1.0.1-d2017022103 | https://github.com/HuangStomach/lims2-necessity	| https://github.com/HuangStomach/lims2-necessity |
 | docker.genee.in/genee/cron-server | v0.1.0-d2016080203 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server |
 | docker.genee.in/genee/reserv-server | v0.4.2-d2016110101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
@@ -127,12 +127,10 @@ docker run \
     -v /var/lib/lims2:/var/lib/lims2 \
     -v /var/lib/lims2_vidcam:/var/lib/lims2_vidcam \
     -v /home/disk:/home/disk \
-    -v /opt/lims2/data/etc/php5:/etc/php5 \
-    -v /opt/lims2/data/etc/nginx:/etc/nginx \
     -p 3007:9000/tcp \
     --restart=always \
     --privileged \
-    docker.genee.in/genee/lims2-env:v1.0.0-d2017022101
+    docker.genee.in/genee/lims2:v1.0.1-d2017022103
 ```
 
 ```
