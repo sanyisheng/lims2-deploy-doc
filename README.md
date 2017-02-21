@@ -117,7 +117,7 @@ node-lims2 的部署, 命令如下:
 
 ```
 docker run \
-    --name=lims2-env \
+    --name=lims2 \
     -d \
     -v /opt/lims2/volumes:/volumes \
     -v /etc/sphinxsearch/conf.d:/etc/sphinxsearch/conf.d \
