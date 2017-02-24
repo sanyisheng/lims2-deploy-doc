@@ -352,7 +352,7 @@ docker run \
     -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
     -p 2530:2530 \
     --restart=always \
-    docker.genee.in/genee/cacs-server:v0.2.1-d2015081401 
+    docker.genee.in/genee/cacs-server:v0.2.2-d2016081001 
 ```
 
 #### sphinxsearch
