@@ -18,7 +18,7 @@
 | docker.genee.in/genee/lims2-guard | v1.0.0-d2015081701 | https://bitbucket.org/genee/lims2-guard | https://bitbucket.org/genee/lims2-guard | 
 | docker.genee.in/genee/crtmp-server | v0.716-d2015081701 | https://bitbucket.org/genee/dockerfile-crtmp | https://bitbucket.org/genee/dockerfile-crtmp | 
 | docker.genee.in/genee/node-lims2 | v1.0.2-d2015081701 | https://bitbucket.org/genee/node-lims2 | https://bitbucket.org/genee/node-lims2 |
-| docker.genee.in/genee/icco-server | v0.3.11-d2017032301 | https://bitbucket.org/genee/icco-server | https://bitbucket.org/genee/icco-server | 
+| docker.genee.in/genee/icco-server | v0.3.12-d2017042501 | https://bitbucket.org/genee/icco-server | https://bitbucket.org/genee/icco-server | 
 | docker.genee.in/genee/cacs-server | v0.2.1-d2015081401 | https://bitbucket.org/genee/cacs-server | https://bitbucket.org/genee/cacs-server |
 | docker.genee.in/genee/gdoor-server | v0.1.9-d2016081002 | https://bitbucket.org/genee/gdoor-server | https://bitbucket.org/genee/gdoor-server |
 | docker.genee.in/genee/glogon-server | v0.5.1-d2016081001 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | 
@@ -461,7 +461,7 @@ docker run \
     -p 2332:2332 \
     -p 2730:2730 \
     --restart=always \
-    docker.genee.in/genee/icco-server:v0.3.11-d2017032301
+    docker.genee.in/genee/icco-server:v0.3.12-d2017042501
 ```
 
 #### lims2-backup-server
