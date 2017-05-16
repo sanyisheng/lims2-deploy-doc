@@ -8,7 +8,7 @@
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- |
 | docker.genee.in/genee/lims2-env | v0.1.0-d2016051101 | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder |
 | docker.genee.in/genee/lims2 | v1.0.1-d2017022103 | https://github.com/HuangStomach/lims2-necessity	| https://github.com/HuangStomach/lims2-necessity |
-| docker.genee.in/genee/cron-server | v0.1.1-d2017032501 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server |
+| docker.genee.in/genee/cron-server | v0.1.2-d2017051601 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server |
 | docker.genee.in/genee/reserv-server | v0.4.2-d2016110101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.3.0-d2015122301 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier |
@@ -223,7 +223,7 @@ docker run \
     -v /home/genee/cron-server/config:/usr/src/app/config \
     -v /home/genee/cron-server/logs:/usr/src/app/logs \
     --restart=always \
-    docker.genee.in/genee/cron-server:v0.1.1-d2017032501
+    docker.genee.in/genee/cron-server:v0.1.2-d2017051601
 ```
 
 #### vidmon-server
