@@ -73,17 +73,20 @@
 
 debade-trigger 的部署, 命令如下:
 
-    docker run -d \
+```
+docker run -d \
     --name=debade-trigger \
     --restart=always \
     -v /home/genee/debade-trigger/config:/etc/debade/ \
     docker.genee.in/genee/debade-trigger:v0.1.7-d20150820101
+```
 
 挂载了 config 配置目录进入
 
 node-lims2 的部署, 命令如下:
 
-    docker run -d \
+```
+docker run -d \
     --name=node-lims2 \
     --restart=always \
     -v /home/genee/node-lims2/config:/usr/src/app/config \
@@ -91,6 +94,7 @@ node-lims2 的部署, 命令如下:
     -v /tmp/lims2-msg:/tmp/lims2-msg \
     -p 172.17.42.1:8041:8041 \
     docker.genee.in/genee/node-lims2:v1.0.2-d2015081701
+```
     
 ### 注意事项
 
@@ -435,6 +439,24 @@ docker run \
     docker.genee.in/genee/mariadb:v10.1.10-d2015122701
 ```
 
+#### mongo
+
+```
+docker run \
+	--name=mongo \
+	-d \
+	-v /home/genee/mongo/data/db:/data/db \
+	-p 172.17.42.1:27017:27017/tcp \
+	--cpu-period=10000 \
+	--cpu-quota=1000 \
+	--privileged \
+	mongo:3.4.4
+```
+
+> 注意在kernal版本为4.0以下的时候 必须要加--cpu-period --cpu-quota来限制cpu使用
+
+> 并且可以一直尝试去使用官方的最新版本
+
 #### reserv-server
 
 ```
@@ -488,7 +510,7 @@ docker run \
     docker.genee.in/genee/haikan-nvs:v1.2.1-d2015082701
 ```
 
-**注意, --log-driver 需要在 1.6 (及)以上的 docker 中使用, 1.6 以下请不要使用 --log-driver**
+> --log-driver 需要在 1.6 (及)以上的 docker 中使用, 1.6 以下请不要使用 --log-driver
 
 
 #### tiandy-nvs
@@ -503,9 +525,9 @@ docker run \
     docker.genee.in/genee/tiandy-nvs:v1.2.1-d2015082701
 ```
 
-**注意, --log-driver 需要在 1.6 (及)以上的 docker 中使用, 1.6 以下请不要使用 --log-driver**
+> --log-driver 需要在 1.6 (及)以上的 docker 中使用, 1.6 以下请不要使用 --log-driver
 
-**注意, 目前所有需要 tiandy-nvs 和 haikan-nvs 的站点 docker daemon 均在 1.6 版本以上**
+> 目前所有需要 tiandy-nvs 和 haikan-nvs 的站点 docker daemon 均在 1.6 版本以上
 
 #### crtmp-server
 
