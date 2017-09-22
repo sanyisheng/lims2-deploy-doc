@@ -181,11 +181,15 @@ docker run \
 	--name nginx \
 	-d \
 	-v /home/genee/nginx/nginx.conf:/etc/nginx/nginx.conf \
-    -v /home/genee/nginx/fastcgi_params:/etc/nginx/fastcgi_params \
+        -v /home/genee/nginx/fastcgi_params:/etc/nginx/fastcgi_params \
 	-v /home/genee/nginx/sites-enabled:/etc/nginx/sites-enabled \
+	-v /home/genee/nginx/sites-available:/etc/nginx/sites-available \
+	-v /home/genee/nginx/conf.d:/etc/nginx/conf.d \
 	-v /var/log/nginx:/var/log/nginx \
 	-v /var/lib/lims2:/var/lib/lims2:rw \
 	-v /data/gini-modules:/data/gini-modules:rw \
+	-v /var/www:/var/www \
+	-v /var/run:/var/run \
 	-p 80:80/tcp \
 	--restart=always \
 	--privileged \
