@@ -242,7 +242,7 @@ docker run \
     --name vidmon-server \
     -v /home/genee/vidmon-server/config:/usr/src/app/config \
     -v /home/genee/vidmon-server/logs:/usr/src/app/logs \
-    -v /var/run/genee-nodejs-ipc:/tmp/genee-nodejs-ipc \
+    -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
     -p 172.17.42.1:5824:5824  \
     --restart=always \
     docker.genee.in/genee/vidmon-server:v0.3.3-d2016081101
