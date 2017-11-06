@@ -8,7 +8,7 @@
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- | ----------------------- |
 | docker.genee.in/genee/lims2-env | v0.1.0-d2016051101 | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | http://od4jrri6r.bkt.clouddn.com/lims2-env.v0.1.0-d2016051101.tar.gz |
 | docker.genee.in/genee/lims2 | v1.0.1-d2017022103 | https://github.com/HuangStomach/lims2-necessity	| https://github.com/HuangStomach/lims2-necessity | http://od4jrri6r.bkt.clouddn.com/lims2.v1.0.1-d2017022103.tar.gz |
-| docker.genee.in/genee/cron-server | v1.0.1-d2017103001 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server | http://od4jrri6r.bkt.clouddn.com/cron-server.v1.0.1-d2017103001.tar.gz |
+| docker.genee.in/genee/cron-server | v1.1.0-d2017110601 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server | http://od4jrri6r.bkt.clouddn.com/cron-server.v1.1.0-d2017110601.tar.gz |
 | docker.genee.in/genee/reserv-server | v0.4.3-d2017060101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server | http://od4jrri6r.bkt.clouddn.com/reserv-server.v0.4.3-d2017060101.tar.gz |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.3.0-d2015122301 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier | http://od4jrri6r.bkt.clouddn.com/debade-courier.v0.3.0-d2015122301.tar.gz |
@@ -231,7 +231,7 @@ docker run \
     -v /home/genee/cron-server/config:/usr/src/app/config \
     -v /home/genee/cron-server/logs:/usr/src/app/logs \
     --restart=always \
-    docker.genee.in/genee/cron-server:v1.0.1-d2017103001
+    docker.genee.in/genee/cron-server:v1.1.0-d2017110601
 ```
 
 #### vidmon-server
