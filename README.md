@@ -510,7 +510,7 @@ docker run \
     -d \
     -v /home/genee/haikan-nvs/config/haikan_nvs.conf:/etc/haikan_nvs.conf \
     --restart=always \
-    --log-driver=none
+    --log-driver=none \
     docker.genee.in/genee/haikan-nvs:v1.2.1-d2015082701
 ```
 
