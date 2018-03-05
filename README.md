@@ -20,7 +20,7 @@
 | docker.genee.in/genee/node-lims2 | v1.0.2-d2015081701 | https://bitbucket.org/genee/node-lims2 | https://bitbucket.org/genee/node-lims2 | http://od4jrri6r.bkt.clouddn.com/node-lims2.v1.0.2-d2015081701.tar.gz |
 | docker.genee.in/genee/icco-server | v0.3.12-d2017042501 | https://bitbucket.org/genee/icco-server | https://bitbucket.org/genee/icco-server | http://od4jrri6r.bkt.clouddn.com/icco-server.v0.3.12-d2017042501.tar.gz |
 | docker.genee.in/genee/cacs-server | v0.2.2-d2016081001 | https://bitbucket.org/genee/cacs-server | https://bitbucket.org/genee/cacs-server | http://od4jrri6r.bkt.clouddn.com/cacs-server.v0.2.2-d2016081001.tar.gz |
-| docker.genee.in/genee/gdoor-server | v0.1.9-d2016081002 | https://bitbucket.org/genee/gdoor-server | https://bitbucket.org/genee/gdoor-server | http://od4jrri6r.bkt.clouddn.com/gdoor-server.v0.1.9-d2016081002.tar.gz |
+| docker.genee.in/genee/gdoor-server | v0.2.0-d2018030501 | https://bitbucket.org/genee/gdoor-server | https://bitbucket.org/genee/gdoor-server | http://od4jrri6r.bkt.clouddn.com/gdoor-server.v0.1.9-d2016081002.tar.gz |
 | docker.genee.in/genee/glogon-server | v0.5.2-d2017093001 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | http://od4jrri6r.bkt.clouddn.com/glogon-server.v0.5.2-d2017093001.tar.gz |
 | docker.genee.in/genee/env-server | v0.1.4-d2015081401 | https://bitbucket.org/genee/env-server | https://bitbucket.org/genee/env-server | http://od4jrri6r.bkt.clouddn.com/env-server.v0.1.4-d2015081401.tar.gz |
 | docker.genee.in/genee/vidmon-server | v0.3.3-d2016081101 | https://bitbucket.org/genee/vidmon-server | https://bitbucket.org/genee/vidmon-server | http://od4jrri6r.bkt.clouddn.com/vidmon-server.v0.3.3-d2016081101.tar.gz |
@@ -300,12 +300,12 @@ docker run \
 docker run \
     -d \
     --name=gdoor-server \
-    -v /home/genee/gdoor-server/config:/usr/src/app/config \
-    -v /home/genee/gdoor-server/logs:/usr/src/app/logs \
-    -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
+    -v ~/gdoor-server/config:/usr/src/app/config \
+    -v ~/gdoor-server/logs:/usr/src/app/logs \
     -p 2930:2930 \
+    -p 2950:2950 \
     --restart=always \
-    docker.genee.in/genee/gdoor-server:v0.1.9-d2016081002
+    docker.genee.in/genee/gdoor-server:v0.2.0-d2018030501
 ```
 
 #### epc-server:
