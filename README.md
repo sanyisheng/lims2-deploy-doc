@@ -26,7 +26,7 @@
 | docker.genee.in/genee/vidmon-server | v0.3.3-d2016081101 | https://bitbucket.org/genee/vidmon-server | https://bitbucket.org/genee/vidmon-server | http://od4jrri6r.bkt.clouddn.com/vidmon-server.v0.3.3-d2016081101.tar.gz |
 | docker.genee.in/genee/dc-cacs-server | v0.1.9-d2016081001 | https://bitbucket.org/genee-yiqikong/dc-cacs-server | https://bitbucket.org/genee-yiqikong/dc-cacs-server | http://od4jrri6r.bkt.clouddn.com/dc-cacs-serve.v0.1.9-d2016081001.tar.gz |
 | docker.genee.in/genee/tszz-server | v0.1.2-d2015081401 | https://bitbucket.org/genee/tszz-server | https://bitbucket.org/genee/tszz-server | http://od4jrri6r.bkt.clouddn.com/tszz-server.v0.1.2-d2015081401.tar.gz |
-| docker.genee.in/genee/epc-server | v0.4.1-d2016081001 | https://bitbucket.org/genee/epc-server | https://bitbucket.org/genee/epc-server | http://od4jrri6r.bkt.clouddn.com/epc-server.v0.4.1-d2016081001.tar.gz |
+| docker.genee.in/genee/epc-server | v0.5.0-d2018030201 | https://bitbucket.org/genee-latrine/epc-server | https://bitbucket.org/genee-latrine/epc-server | http://od4jrri6r.bkt.clouddn.com/epc-server.v0.4.1-d2016081001.tar.gz |
 | docker.genee.in/genee/genee-updater-server | v0.2.12-d2015081401 | https://bitbucket.org/genee/genee-updater-server | https://bitbucket.org/genee/genee-updater-server | http://od4jrri6r.bkt.clouddn.com/update.v0.2.12-d2015081401.tar.gz |
 | docker.genee.in/genee/mariadb | v10.1.10-d2015122701 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | http://od4jrri6r.bkt.clouddn.com/mariadb.v10.1.10-d2015122701.tar.gz |
 | docker.genee.in/genee/redis | v2.8.17-d2015080301 | https://github.com/iamfat/dockerfile-redis | https://github.com/iamfat/dockerfile-redis | http://od4jrri6r.bkt.clouddn.com/redis.v2.8.17-d2015080301.tar.gz |
@@ -314,12 +314,12 @@ docker run \
 docker run \
     -d \
     --name=epc-server \
-    -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
     -v /home/genee/epc-server/config:/usr/src/app/config \
     -v /home/genee/epc-server/logs:/usr/src/app/logs \
     -p 3041:3041 \
+    -p 3061:3061 \
     --restart=always \
-    docker.genee.in/genee/epc-server:v0.4.1-d2016081001
+    docker.genee.in/genee/epc-server:v0.5.0-d2018030201
 ```
 
 #### env-server
