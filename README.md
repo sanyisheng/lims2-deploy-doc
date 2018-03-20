@@ -7,9 +7,9 @@
 | 服务列表 | 版本 | dockerfile 地址 | 项目地址 | 七牛云镜像 |
 | --------------------------------------- | ---------------------------: | ----------------------------------- | ----------------------------------- | ----------------------- |
 | docker.genee.in/genee/lims2-env | v0.1.0-d2016051101 | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | https://bitbucket.org/genee-yiqikong/lims2-dockerimage-builder | http://od4jrri6r.bkt.clouddn.com/lims2-env.v0.1.0-d2016051101.tar.gz |
-| docker.genee.in/genee/lims2 | v1.0.1-d2017022103 | https://github.com/HuangStomach/lims2-necessity	| https://github.com/HuangStomach/lims2-necessity | http://od4jrri6r.bkt.clouddn.com/lims2.v1.0.1-d2017022103.tar.gz |
+| docker.genee.in/genee/lims2 | v1.0.1-d2017022103 | https://github.com/HuangStomach/lims2-necessity	| https://github.com/HuangStomach/lims2-necessity | http://od4jrri6r.bkt.clouddn.com/lims2.v1.1.1-d2018011101.tar.gz |
 | docker.genee.in/genee/cron-server | v1.1.1-d2017110602 | https://bitbucket.org/genee-yiqikong/cron-server | https://bitbucket.org/genee-yiqikong/cron-server | http://od4jrri6r.bkt.clouddn.com/cron-server.v1.1.1-d2017110602.tar.gz |
-| docker.genee.in/genee/reserv-server | v0.4.3-d2017060101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server | http://od4jrri6r.bkt.clouddn.com/reserv-server.v0.4.3-d2017060101.tar.gz |
+| docker.genee.in/genee/reserv-server | v0.4.3-d2017060101 | https://github.com/17kong/lims2-reserv-server | https://github.com/17kong/lims2-reserv-server | http://od4jrri6r.bkt.clouddn.com/reserv-server.v0.5.0-d2018011101.tar.gz |
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.3.0-d2015122301 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier | http://od4jrri6r.bkt.clouddn.com/debade-courier.v0.3.0-d2015122301.tar.gz |
 | docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-projects/docker-convention) 限定** | https://github.com/iamfat/dockerfile-debade-trigger | https://github.com/iamfat/debade-trigger | http://od4jrri6r.bkt.clouddn.com/debade-trigger.v0.1.7-d20150820101.tar.gz |
@@ -17,11 +17,11 @@
 | docker.genee.in/genee/tiandy-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | http://od4jrri6r.bkt.clouddn.com/tiandy-nvs.v1.2.1-d2015082701.tar.gz |
 | docker.genee.in/genee/lims2-guard | v1.0.0-d2015081701 | https://bitbucket.org/genee/lims2-guard | https://bitbucket.org/genee/lims2-guard | 
 | docker.genee.in/genee/crtmp-server | v0.716-d2015081701 | https://bitbucket.org/genee/dockerfile-crtmp | https://bitbucket.org/genee/dockerfile-crtmp | 
-| docker.genee.in/genee/node-lims2 | v1.0.2-d2015081701 | https://bitbucket.org/genee/node-lims2 | https://bitbucket.org/genee/node-lims2 | http://od4jrri6r.bkt.clouddn.com/node-lims2.v1.0.2-d2015081701.tar.gz |
+| docker.genee.in/genee/node-lims2 | v1.0.2-d2015081701 | https://bitbucket.org/genee/node-lims2 | https://bitbucket.org/genee/node-lims2 | http://od4jrri6r.bkt.clouddn.com/node-lims2.v2.0.1-d2017120801.tar.gz |
 | docker.genee.in/genee/icco-server | v0.3.12-d2017042501 | https://bitbucket.org/genee/icco-server | https://bitbucket.org/genee/icco-server | http://od4jrri6r.bkt.clouddn.com/icco-server.v0.3.12-d2017042501.tar.gz |
 | docker.genee.in/genee/cacs-server | v0.2.2-d2016081001 | https://bitbucket.org/genee/cacs-server | https://bitbucket.org/genee/cacs-server | http://od4jrri6r.bkt.clouddn.com/cacs-server.v0.2.2-d2016081001.tar.gz |
 | docker.genee.in/genee/gdoor-server | v0.2.0-d2018030501 | https://bitbucket.org/genee/gdoor-server | https://bitbucket.org/genee/gdoor-server | http://od4jrri6r.bkt.clouddn.com/gdoor-server.v0.2.0-d2018030501.tar.gz |
-| docker.genee.in/genee/glogon-server | v0.5.2-d2017093001 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | http://od4jrri6r.bkt.clouddn.com/glogon-server.v0.5.2-d2017093001.tar.gz |
+| docker.genee.in/genee/glogon-server | v0.5.2-d2017093001 | https://bitbucket.org/genee/glogon-server | https://bitbucket.org/genee/glogon-server | http://od4jrri6r.bkt.clouddn.com/glogon-server.v1.0.0-d2018020701.tar.gz |
 | docker.genee.in/genee/env-server | v0.1.4-d2015081401 | https://bitbucket.org/genee/env-server | https://bitbucket.org/genee/env-server | http://od4jrri6r.bkt.clouddn.com/env-server.v0.1.4-d2015081401.tar.gz |
 | docker.genee.in/genee/vidmon-server | v0.3.3-d2016081101 | https://bitbucket.org/genee/vidmon-server | https://bitbucket.org/genee/vidmon-server | http://od4jrri6r.bkt.clouddn.com/vidmon-server.v0.3.3-d2016081101.tar.gz |
 | docker.genee.in/genee/dc-cacs-server | v0.1.9-d2016081001 | https://bitbucket.org/genee-yiqikong/dc-cacs-server | https://bitbucket.org/genee-yiqikong/dc-cacs-server | http://od4jrri6r.bkt.clouddn.com/dc-cacs-serve.v0.1.9-d2016081001.tar.gz |
