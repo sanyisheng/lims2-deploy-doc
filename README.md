@@ -139,27 +139,21 @@ docker run \
 
 ```
 docker run \
-    --name=lims2-env \
+    --name=lims2 \
     -d \
-    -v /dev/log:/dev/log \
-    -v /etc/sphinxsearch/conf.d:/etc/sphinxsearch/conf.d \
     -v /opt/lims2/volumes:/volumes \
+    -v /etc/sphinxsearch/conf.d:/etc/sphinxsearch/conf.d \
     -v /etc/lims2:/etc/lims2 \
-    -v /opt/lims2/volumes/var/log/nginx:/var/log/nginx \
     -v /etc/msmtprc:/etc/msmtprc \
-    -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
-    -v /var/lib/php5:/var/lib/php5 \
     -v /var/lib/lims2:/var/lib/lims2 \
-    -v /home/disk:/home/disk \
     -v /var/lib/lims2_vidcam:/var/lib/lims2_vidcam \
-    -v /opt/lims2/data/etc/php5:/etc/php5 \
-    -v /opt/lims2/data/etc/nginx:/etc/nginx \
-    -v /opt/lims2/data/var/www:/var/www \
-    -p 3007:80/tcp \
+    -v /home/disk:/home/disk \
+    -p 3007:9000/tcp \
     --restart=always \
     --privileged \
-    docker.genee.in/genee/lims2-env:v0.1.0-d2016051101
+    docker.genee.in/genee/lims2:v1.1.1-d2018011101
 ```
+
 
 #### eq-stat
 
@@ -274,10 +268,10 @@ docker run \
     --name=glogon-server \
     -v /home/genee/glogon-server/config:/usr/src/app/config \
     -v /home/genee/glogon-server/logs:/usr/src/app/logs \
-    -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
     -p 2430:2430 \
+    -p 172.17.42.1:2450:2450 \
     --restart=always \
-    docker.genee.in/genee/glogon-server:v0.5.2-d2017093001
+    docker.genee.in/genee/glogon-server:v1.0.0-d2018020701
 ```
 
 #### genee-updater-server:
@@ -423,7 +417,7 @@ docker run \
     -v /tmp/lims2-msg:/tmp/lims2-msg \
     -p 172.17.42.1:8041:8041 \
     --restart=always \
-    docker.genee.in/genee/node-lims2:v1.0.2-d2015081701
+    docker.genee.in/genee/node-lims2:v2.0.1-d2017120801
 ```
 
 #### mariadb
@@ -470,8 +464,9 @@ docker run \
     -v /home/genee/reserv-server/config:/usr/src/app/config \
     -v /home/genee/reserv-server/logs:/usr/src/app/logs \
     -p 172.17.42.1:9898:9898 \
+    -p 172.17.42.1:9509:9509 \
     --restart=always \
-    docker.genee.in/genee/reserv-server:v0.4.3-d2017060101
+    docker.genee.in/genee/reserv-server:v0.5.0-d2018011101
 ```
 
 #### icco-server
