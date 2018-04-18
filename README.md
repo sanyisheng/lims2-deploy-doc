@@ -13,7 +13,7 @@
 | docker.genee.in/genee/lims2-backup-server | v0.1.1-d2015082701 | https://bitbucket.org/genee/lims2-backup | https://bitbucket.org/genee/lims2-backup |
 | docker.genee.in/genee/debade-courier | v0.3.0-d2015122301 | https://github.com/iamfat/dockerfile-debade-courier | https://github.com/iamfat/debade-courier | http://od4jrri6r.bkt.clouddn.com/debade-courier.v0.3.0-d2015122301.tar.gz |
 | docker.genee.in/genee/debade-trigger | v0.1.7-d20150820101 **注意, 此版本未正确按照 [docker-convention](https://github.com/genee-projects/docker-convention) 限定** | https://github.com/iamfat/dockerfile-debade-trigger | https://github.com/iamfat/debade-trigger | http://od4jrri6r.bkt.clouddn.com/debade-trigger.v0.1.7-d20150820101.tar.gz |
-| docker.genee.in/genee/haikan-nvs | v1.2.2-d2017103101 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | http://od4jrri6r.bkt.clouddn.com/haikan-nvs.v1.2.2-d2017103101.tar.gz |
+| docker.genee.in/genee/haikan-nvs | v1.2.3-d2018041801 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | http://od4jrri6r.bkt.clouddn.com/haikan-nvs.v1.2.3-d2018041801.tar.gz |
 | docker.genee.in/genee/tiandy-nvs | v1.2.1-d2015082701 | https://bitbucket.org/genee/genee-nvs | https://bitbucket.org/genee/genee-nvs | http://od4jrri6r.bkt.clouddn.com/tiandy-nvs.v1.2.1-d2015082701.tar.gz |
 | docker.genee.in/genee/lims2-guard | v1.0.0-d2015081701 | https://bitbucket.org/genee/lims2-guard | https://bitbucket.org/genee/lims2-guard | 
 | docker.genee.in/genee/crtmp-server | v0.716-d2015081701 | https://bitbucket.org/genee/dockerfile-crtmp | https://bitbucket.org/genee/dockerfile-crtmp | 
@@ -506,7 +506,7 @@ docker run \
     -v /home/genee/haikan-nvs/config/haikan_nvs.conf:/etc/haikan_nvs.conf \
     --restart=always \
     --log-driver=none \
-    docker.genee.in/genee/haikan-nvs:v1.2.2-d2017103101
+    docker.genee.in/genee/haikan-nvs:v1.2.3-d2018041801
 ```
 
 > --log-driver 需要在 1.6 (及)以上的 docker 中使用, 1.6 以下请不要使用 --log-driver
