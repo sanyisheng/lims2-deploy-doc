@@ -145,6 +145,7 @@ docker run \
     -v /etc/sphinxsearch/conf.d:/etc/sphinxsearch/conf.d \
     -v /etc/lims2:/etc/lims2 \
     -v /etc/msmtprc:/etc/msmtprc \
+    -v /var/run/genee-nodejs-ipc:/var/run/genee-nodejs-ipc \
     -v /var/lib/lims2:/var/lib/lims2 \
     -v /var/lib/lims2_vidcam:/var/lib/lims2_vidcam \
     -v /home/disk:/home/disk \
