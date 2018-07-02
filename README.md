@@ -474,7 +474,7 @@ docker run \
 
 ```
 docker run \
-    --name=icco-server 
+    --name=icco-server \
     -d \
     -v /home/genee/icco-server/config:/usr/src/app/config \
     -v /home/genee/icco-server/logs:/usr/src/app/logs \
