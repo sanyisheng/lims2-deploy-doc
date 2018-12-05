@@ -28,7 +28,7 @@
 | docker.genee.in/genee/tszz-server | v0.1.2-d2015081401 | https://bitbucket.org/genee/tszz-server | https://bitbucket.org/genee/tszz-server | http://od4jrri6r.bkt.clouddn.com/tszz-server.v0.1.2-d2015081401.tar.gz |
 | docker.genee.in/genee/epc-server | v0.5.1-d2018052801 | https://bitbucket.org/genee-latrine/epc-server | https://bitbucket.org/genee-latrine/epc-server | http://od4jrri6r.bkt.clouddn.com/epc-server.v0.5.1-d2018052801.tar.gz |
 | docker.genee.in/genee/genee-updater-server | v0.2.12-d2015081401 | https://bitbucket.org/genee/genee-updater-server | https://bitbucket.org/genee/genee-updater-server | http://od4jrri6r.bkt.clouddn.com/update.v0.2.12-d2015081401.tar.gz |
-| docker.genee.in/genee/mariadb | v10.1.10-d2015122701 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | http://od4jrri6r.bkt.clouddn.com/mariadb.v10.1.10-d2015122701.tar.gz |
+| docker.genee.in/genee/mariadb | v10.3.10-d2018102301 | https://github.com/iamfat/dockerfile-mariadb | https://github.com/iamfat/dockerfile-mariadb | http://od4jrri6r.bkt.clouddn.com/mariadb.v10.3.10-d2018102301.tar.gz |
 | docker.genee.in/genee/redis | v2.8.17-d2015080301 | https://github.com/iamfat/dockerfile-redis | https://github.com/iamfat/dockerfile-redis | http://od4jrri6r.bkt.clouddn.com/redis.v2.8.17-d2015080301.tar.gz |
 | docker.genee.in/genee/beanstalkd | v1.10.0-d2017112401 | https://github.com/genee-projects/dockerfile-beanstalkd | https://github.com/genee-projects/dockerfile-beanstalkd | http://od4jrri6r.bkt.clouddn.com/beanstalkd.v1.10.0-d2017112401.tar.gz |
 | docker.genee.in/genee/sphinxsearch | v2.2.9-d2015080301 | https://github.com/iamfat/dockerfile-sphinxsearch | https://github.com/iamfat/dockerfile-sphinxsearch | http://od4jrri6r.bkt.clouddn.com/sphinxsearch.v2.2.9-d2015080301.tar.gz |
@@ -435,7 +435,7 @@ docker run \
     -v /dev/log:/dev/log \
     -p 172.17.42.1:3306:3306 \
     --restart=always \
-    docker.genee.in/genee/mariadb:v10.1.10-d2015122701
+    docker.genee.in/genee/mariadb:v10.3.10-d2018102301
 ```
 
 #### mongo
